@@ -49,9 +49,9 @@ input_data = pd.DataFrame([{
     "Fare":fare
 }])
 
-st.write("Categorical columns:", model.dls.cat_names)
-st.write("Continuous columns:", model.dls.cont_names)
-st.write("Input columns:", input_data.columns.tolist())
+# st.write("Categorical columns:", model.dls.cat_names)
+# st.write("Continuous columns:", model.dls.cont_names)
+# st.write("Input columns:", input_data.columns.tolist())
 
 if st.button("Predict Survival"):
     pred_idx, confidence = predict_survival(input_data)
