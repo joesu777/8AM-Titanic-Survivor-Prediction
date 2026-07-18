@@ -42,11 +42,11 @@ input_data = pd.DataFrame([{
     "Embarked": embarked,
     "Title": title,
     "Deck": deck,
-    "Age":age,
     "Age_na":age_na,
-    "Fare":fare,
+    "Age":age,
     "SibSp":sibsp,
-    "Parch":parch
+    "Parch":parch,
+    "Fare":fare
 }])
 
 st.write("Categorical columns:", model.dls.cat_names)
