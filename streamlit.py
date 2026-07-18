@@ -42,7 +42,7 @@ input_data = pd.DataFrame([{
     "Age":age,
     "Age_na":age_na,
     "Fare":fare,
-    "Sibsp":sibsp,
+    "SibSp":sibsp,
     "Parch":parch
 }])
 
