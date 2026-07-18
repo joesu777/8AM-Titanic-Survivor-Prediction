@@ -16,7 +16,7 @@ st.header("Passenger Information")
 
 pclass = st.selectbox("Passenger Class", [1, 2, 3])
 sex = st.selectbox("Sex", ["male", "female"])
-title = st.selectbox("Title", model.dls.clases["Title"])
+title = st.selectbox("Title", model.dls.classes["Title"])
 deck = st.selectbox("Cabin Deck", model.dls.classes["Deck"])
 embarked = st.selectbox("Embarked", model.dls.classes["Embarked"])
 
