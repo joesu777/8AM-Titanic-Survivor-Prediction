@@ -33,6 +33,9 @@ if age_missing == True:
 else:
     age_na = 0
 
+
+
+
 input_data = pd.DataFrame([{
     "Pclass":pclass,
     "Sex":sex,
@@ -45,6 +48,10 @@ input_data = pd.DataFrame([{
     "SibSp":sibsp,
     "Parch":parch
 }])
+
+st.write("Categorical columns:", model.dls.cat_names)
+st.write("Continuous columns:", model.dls.cont_names)
+st.write("Input columns:", input_data.columns.tolist())
 
 if st.button("Predict Survival"):
     pred_idx, confidence = predict_survival(input_data)
